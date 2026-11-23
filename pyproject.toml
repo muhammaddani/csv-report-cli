@@ -14,7 +14,7 @@ description = "Ubah CSV penjualan menjadi laporan ringkasan di terminal, dengan 
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "muhammaddani" }]
+authors = [{ name = "Muhammad Dani Noar" }]
 keywords = ["csv", "report", "cli", "sales", "excel", "automation"]
 classifiers = [
     "Programming Language :: Python :: 3",

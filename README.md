@@ -12,6 +12,10 @@ Dibuat untuk kasus yang sangat umum di UMKM dan tim kecil: data penjualan ada di
 file CSV, tetapi untuk tahu "produk mana yang paling laku" atau "wilayah mana
 yang paling untung", orang masih menghitungnya manual di spreadsheet.
 
+## Pratinjau
+
+![Contoh keluaran csv-report-cli](assets/preview.png)
+
 ## Fitur
 
 - Ringkasan total pendapatan, total unit, dan jumlah transaksi
