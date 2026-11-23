@@ -1,5 +1,9 @@
 # csv-report-cli
 
+[![CI](https://github.com/muhammaddani/csv-report-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/muhammaddani/csv-report-cli/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+
 Alat baris perintah (CLI) untuk mengubah file **CSV penjualan mentah** menjadi
 **laporan ringkasan** yang langsung terbaca di terminal, dan opsional diekspor
 ke **Excel**.
@@ -87,12 +91,27 @@ Contoh ada di [`data/sales_sample.csv`](data/sales_sample.csv).
 csv-report-cli/
 ├── src/
 │   └── report.py          # seluruh logika program + CLI
+├── tests/
+│   └── test_report.py     # test otomatis (pytest)
 ├── data/
 │   └── sales_sample.csv   # data contoh
+├── .github/workflows/
+│   └── ci.yml             # CI: jalankan test di setiap push
 ├── requirements.txt       # dependensi opsional (Excel export)
 ├── LICENSE                # lisensi MIT
 └── README.md
 ```
+
+## Menjalankan test
+
+```bash
+pip install pytest
+pytest -v
+```
+
+Test mencakup pembacaan CSV, validasi kolom, penanganan baris rusak, agregasi
+laporan, dan format mata uang. CI menjalankannya otomatis pada Python 3.10–3.12
+setiap kali ada push.
 
 ## Ide pengembangan lanjutan
 
