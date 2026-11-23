@@ -97,9 +97,37 @@ csv-report-cli/
 │   └── sales_sample.csv   # data contoh
 ├── .github/workflows/
 │   └── ci.yml             # CI: jalankan test di setiap push
+├── Makefile               # perintah umum (test, run, clean)
+├── justfile               # alternatif jika memakai `just`
+├── tasks.py               # tugas lintas-platform (tanpa make)
+├── pyproject.toml         # metadata paket + konfigurasi pytest
+├── CHANGELOG.md           # riwayat perubahan
+├── CONTRIBUTING.md        # panduan kontribusi
 ├── requirements.txt       # dependensi opsional (Excel export)
 ├── LICENSE                # lisensi MIT
 └── README.md
+```
+
+## Perintah umum
+
+Cara paling mudah (lintas-platform, tanpa `make`):
+
+```bash
+python tasks.py          # daftar semua tugas
+python tasks.py install  # pasang dependensi
+python tasks.py test     # jalankan test
+python tasks.py run      # contoh laporan pada data sampel
+python tasks.py excel    # buat contoh laporan Excel
+python tasks.py clean    # hapus cache dan keluaran
+```
+
+Tersedia juga `Makefile` (Linux/macOS) dan `justfile` (jika memakai `just`).
+
+## Instalasi sebagai paket
+
+```bash
+pip install .
+csv-report data/sales_sample.csv
 ```
 
 ## Menjalankan test

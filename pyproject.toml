@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["report"]
+package-dir = { "" = "src" }
+script-files = []
+
+[project]
+name = "csv-report-cli"
+version = "1.0.0"
+description = "Ubah CSV penjualan menjadi laporan ringkasan di terminal, dengan ekspor Excel opsional."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "muhammaddani" }]
+keywords = ["csv", "report", "cli", "sales", "excel", "automation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Accounting",
+]
+
+[project.optional-dependencies]
+excel = ["pandas>=2.0.0", "openpyxl>=3.1.0"]
+test = ["pytest>=7.0.0"]
+
+[project.scripts]
+csv-report = "report:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
