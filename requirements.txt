@@ -1,0 +1,6 @@
+# Dependencies for csv-report-cli
+# Core logic uses only the Python standard library.
+# The following are optional, only needed for Excel export (--excel).
+
+pandas>=2.0.0
+openpyxl>=3.1.0

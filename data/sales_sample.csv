@@ -1,0 +1,13 @@
+date,product,region,quantity,unit_price
+2026-01-05,Kopi Arabika,Jakarta,12,45000
+2026-01-05,Teh Hijau,Bandung,8,25000
+2026-01-06,Kopi Arabika,Surabaya,20,45000
+2026-01-06,Kopi Robusta,Jakarta,15,38000
+2026-01-07,Teh Hijau,Jakarta,10,25000
+2026-01-07,Kopi Arabika,Bandung,6,45000
+2026-01-08,Kopi Robusta,Surabaya,25,38000
+2026-01-08,Teh Hijau,Bandung,14,25000
+2026-01-09,Kopi Arabika,Jakarta,18,45000
+2026-01-09,Kopi Robusta,Bandung,9,38000
+2026-01-10,Teh Hijau,Surabaya,22,25000
+2026-01-10,Kopi Arabika,Surabaya,11,45000
